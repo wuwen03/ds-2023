@@ -21,6 +21,9 @@ class List:
         node.next=now
         return
     
+    def append(self,data)->None:
+        self.insert(data,self.size())
+
     def erase(self,position:int=0)->None:
         if position >= self.head.data:
             return
@@ -45,20 +48,38 @@ class List:
     def size(self):
         return self.head.data
     
+    def all(self):
+        arr=[self.find(i).data for i in range(self.size())]
+        return arr
+    
 a=List()
-a.insert("cyq",a.size())
-print(a.find(0))
+a.append("cyq")
+print(a.all())
+
 a.find(0).data=3
-a.insert("sdf",a.size())
+print(a.all())
+
+a.append("sdf")
+print(a.all())
+
 a.insert(234324,1)
+print(a.all())
+
 a.find(1).data=324
+print(a.all())
+
 a.insert(34)
+print(a.all())
+
+a.insert("ad",2)
+print(a.all())
+
 a.insert(-1)
+print(a.all())
+
 a.erase(1)
-arr=[]
-for i in range(0,a.size()):
-    arr.append(a.find(i).data)
-print(arr)
+print(a.all())
+
 
             
     

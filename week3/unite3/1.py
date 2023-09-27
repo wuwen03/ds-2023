@@ -1,7 +1,7 @@
 x=float(input("输入的小数："))
 a=int(x)
 b=x-a
-print(a,b)
+# print(a,b)
 ans=""
 while a:
     ans=str(a%2)+ans
@@ -16,7 +16,7 @@ if b:
             ans=ans+'1'
             b-=1
         else:  
-            ans=ans+'1'
+            ans=ans+'0'
         cnt-=1
 
 print(ans)

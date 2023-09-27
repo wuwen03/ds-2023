@@ -27,4 +27,4 @@ def millerRabin(n):
     return True
 
 x=int(input("输入："))
-print(millerRabin(x))
+print("是否为素数：",millerRabin(x))

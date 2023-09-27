@@ -1,4 +1,4 @@
-grade=input("输入成绩:")
+grade=int(input("输入成绩:"))
 if grade<60:
     print("不合格")
 elif grade<75:

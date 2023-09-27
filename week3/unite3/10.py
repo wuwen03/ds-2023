@@ -48,6 +48,10 @@ class List:
     def size(self):
         return self.head.data
     
+    def all(self):
+        arr=[self.find(i).data for i in range(self.size())]
+        return arr
+    
 a=List()
 b=List()
 a.append(1)
@@ -78,6 +82,7 @@ while ita or itb:
     elif itb:
         ans.append(itb.data)
         itb=itb.next
-
-print([ans.find(i).data for i in range(ans.size())])
+print("a:",a.all())
+print("b:",b.all())
+print("ans",ans.all())
 

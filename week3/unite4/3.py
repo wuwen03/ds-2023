@@ -1,3 +1,4 @@
+import random
 def insert_sort(arr):
     for i in range (len(arr)):
         cur_ind=i
@@ -8,4 +9,6 @@ def insert_sort(arr):
         arr[cur_ind]=cur
     return arr
 
-  
+arr=[random.randint(0,20) for i in range(10)]
+print("未排序：",arr)
+print("排序后：",insert_sort(arr))
