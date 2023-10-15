@@ -1,0 +1,1 @@
+这里实现的爬虫爬取了计算机所有书籍的前9页的书名，价格，作者信息，并且存储在了.\scrapy\mySpider\mySpider\data.csv中
