@@ -31,8 +31,7 @@ def get_model():
     model=LeNet5()
     return model,torch.optim.SGD(model.parameters(),lr=0.2)
 
-dev = torch.device(
-    "cuda") if torch.cuda.is_available() else torch.device("cpu")
+dev = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 
 model,opt=get_model()
 loss_func=F.cross_entropy
