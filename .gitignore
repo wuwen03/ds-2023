@@ -1,4 +1,4 @@
-data/
+/data/
 
 /.vscode/
 
@@ -11,3 +11,7 @@ data/
 /week8/unite13/20_newsgroups
 /week8/unite13/20_newsgroups.tar
 /week8/unite13/20_newsgroups.tar.gz
+
+/project/data/
+
+/project/2023-12-03 23-07-56.mkv
